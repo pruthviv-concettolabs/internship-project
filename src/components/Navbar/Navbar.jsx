@@ -1,10 +1,6 @@
 import "./Navbar";
 const Navbar = () => {
-  return (
-    <div>
-      <h1>hello from navbar</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Navbar;

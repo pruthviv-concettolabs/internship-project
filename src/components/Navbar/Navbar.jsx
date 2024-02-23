@@ -19,7 +19,7 @@ const NavigationBar = () => {
   return (
     <>
       <header>
-        <Navbar className="nav-main" expanded="lg" fixed="top">
+        <Navbar className="nav-main" expanded="lg">
           <Container fluid>
             <Row className="w-100 p-2  align-items-center d-flex justify-content-center">
               <Col className="left-column">

@@ -11,41 +11,48 @@ import Banner from "../img/banner.png";
 const Category = () => {
   return (
     <>
-      <Container className="category-container">
-        <Row className="justify-content-md-center py-4">
-          <Col>
-            <img src={kitchen} alt="Home and Kitchen" />
-            <h6>Home and Kitchen</h6>
-          </Col>
-          <Col>
-            <img src={health} alt="Health & Beauty" />
-            <h6>Health & Beauty</h6>
-          </Col>
-          <Col>
-            <img src={electric} alt="Electronics" />
-            <h6>Electronics</h6>
-          </Col>
-          <Col>
-            <img src={toy} alt="Toys & Crafts" />
-            <h6>Toys & Crafts</h6>
-          </Col>
-          <Col>
-            <img src={sport} alt="Sports & Leisure" />
-            <h6>Sports & Leisure</h6>
-          </Col>
-          <Col>
-            <img src={Clearance} alt="Clearance" />
-            <h6>Clearance</h6>
-          </Col>
-        </Row>
-      </Container>
+      <section className="main-section">
+        <section>
+          <Container className="category-container">
+            <Row className="justify-content-md-center py-4">
+              <Col>
+                <img src={kitchen} alt="Home and Kitchen" />
+                <h6>Home and Kitchen</h6>
+              </Col>
+              <Col>
+                <img src={health} alt="Health & Beauty" />
+                <h6>Health & Beauty</h6>
+              </Col>
+              <Col>
+                <img src={electric} alt="Electronics" />
+                <h6>Electronics</h6>
+              </Col>
+              <Col>
+                <img src={toy} alt="Toys & Crafts" />
+                <h6>Toys & Crafts</h6>
+              </Col>
+              <Col>
+                <img src={sport} alt="Sports & Leisure" />
+                <h6>Sports & Leisure</h6>
+              </Col>
+              <Col>
+                <img src={Clearance} alt="Clearance" />
+                <h6>Clearance</h6>
+              </Col>
+            </Row>
+          </Container>
+        </section>
 
-      {/* banner start from here  */}
-      <Container fluid className="p-0">
-        <Row>
-          <img src={Banner} alt="banner" className="img-fluid " />
-        </Row>
-      </Container>
+        {/* banner start from here  */}
+
+        <section className="banner">
+          <Container fluid p-0>
+            <div>
+              <img src={Banner} alt="banner" className="img-fluid " />
+            </div>
+          </Container>
+        </section>
+      </section>
     </>
   );
 };

@@ -1,9 +1,14 @@
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Button, Form, InputGroup } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Row,
+  Col,
+  Nav,
+  Form,
+  InputGroup,
+  Button,
+} from "react-bootstrap";
+
 import "../Navbar/Navbar.scss";
 import logo from "../../img/brand-logo.png";
 import searchIcon from "../../img/search-normal.svg";

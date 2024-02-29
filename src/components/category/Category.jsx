@@ -1,12 +1,12 @@
 import "./Category.scss";
 import { Col, Container, Row } from "react-bootstrap";
-import kitchen from "../img/kitchen.png";
-import health from "../img/Image12.png";
-import electric from "../img/Image14.png";
-import toy from "../img/Image15.png";
-import sport from "../img/Image17.png";
-import Clearance from "../img/Image19.png";
-import Banner from "../img/banner.png";
+import kitchen from "../../img/kitchen.png";
+import health from "../../img/Image12.png";
+import electric from "../../img/Image14.png";
+import toy from "../../img/Image15.png";
+import sport from "../../img/Image17.png";
+import Clearance from "../../img/Image19.png";
+import Banner from "../../img/banner.png";
 
 const Category = () => {
   return (
@@ -43,12 +43,10 @@ const Category = () => {
           </Container>
         </section>
 
-        {/* banner start from here  */}
-
         <section className="banner">
-          <Container fluid p-0>
+          <Container fluid className="p-0">
             <div>
-              <img src={Banner} alt="banner" className="img-fluid " />
+              <img src={Banner} alt="banner" className="img-fluid w-100" />
             </div>
           </Container>
         </section>

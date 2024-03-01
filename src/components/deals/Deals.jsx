@@ -46,7 +46,7 @@ const Deals = () => {
         <Row>
           <div className="d-flex justify-content-between  align-content-center">
             <div className="d-flex">
-              <h1 className="fw-bold text-left">Deals of the Day</h1>
+              <h2 className="fw-bold text-left">Deals of the Day</h2>
 
               <div className="d-flex  ps-3 ">
                 <h4 className="text-muted align-self-end  fw-bold ">Ends in</h4>

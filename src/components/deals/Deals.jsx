@@ -1,12 +1,11 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import "./deals.scss";
 import rightBtn from "../../img/Group 24.svg";
 import Slider from "react-slick";
-import DealCard from "../../dealCards/DealCard";
-
+import products from "./products.js";
 const Deals = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
@@ -64,26 +63,25 @@ const Deals = () => {
           </div>
         </Row>
 
-        {/* <Row>
+        {/* slider  */}
+
+        <Row>
           <Col className="col-12">
             <div className="slider-container">
               <Slider {...settings}>
-                <div>
-                  <DealCard />
-                </div>
-                <div>
-                  <DealCard />
-                </div>{" "}
-                <div>
-                  <DealCard />
-                </div>{" "}
-                <div>
-                  <DealCard />
-                </div>
+                {products.map((data) => (
+                  <Card key={data.id} className="d-flex">
+                    <Card.Img src={data.imgUrl} alt="" />
+                    <Card.Body>
+                      <Card.Title>{data.title}</Card.Title>
+                      <Card.Text>{data.discount}</Card.Text>
+                    </Card.Body>
+                  </Card>
+                ))}
               </Slider>
             </div>
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </>
   );

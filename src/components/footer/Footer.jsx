@@ -1,6 +1,9 @@
 import "./footer.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import fb from "../../img/Facebook Icon.svg";
+import twitter from "../../img/Vector.svg";
+import ig from "../../img/instagram.svg";
+import pinterest from "../../img/pinterest.svg";
 
 const Footer = () => {
   return (
@@ -62,14 +65,20 @@ const Footer = () => {
             </Col>
           </Row>
 
-          <Row>
+          <Row className="pt-4 pb-3 cust-border">
             <Col className="col-md-4 d-flex align-bottom">
-              <span className="social-icon d-flex pe-1">
+              <div className="social-icon d-flex pe-1">
                 <img src={fb} alt="fb" />
-              </span>
-              <span className="social-icon d-flex">
-                <img src={fb} alt="fb" />
-              </span>
+              </div>
+              <div className="social-icon d-flex ">
+                <img src={twitter} alt="fb" />
+              </div>
+              <div className="social-icon d-flex ">
+                <img src={ig} alt="fb" />
+              </div>
+              <div className="social-icon d-flex ">
+                <img src={pinterest} alt="fb" />
+              </div>
             </Col>
             <Col className="col-md-4 ">
               <p>All rights reserved © 2023 BargainFox.com</p>

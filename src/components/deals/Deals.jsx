@@ -1,15 +1,17 @@
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Card } from "react-bootstrap";
 import "./deals.scss";
 import rightBtn from "../../img/Group 24.svg";
 import Slider from "react-slick";
 import products from "./products.js";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Deals = () => {
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     initialSlide: 0,
     responsive: [
       {
@@ -48,7 +50,6 @@ const Deals = () => {
 
               <div className="d-flex  ps-3 ">
                 <h4 className="text-muted align-self-end  fw-bold ">Ends in</h4>
-                <div className="">11hrs</div>
               </div>
             </div>
 
@@ -66,21 +67,20 @@ const Deals = () => {
         {/* slider  */}
 
         <Row>
-          <Col className="col-12">
-            <div className="slider-container">
-              <Slider {...settings}>
-                {products.map((data) => (
-                  <Card key={data.id} className="d-flex">
-                    <Card.Img src={data.imgUrl} alt="" />
-                    <Card.Body>
-                      <Card.Title>{data.title}</Card.Title>
-                      <Card.Text>{data.discount}</Card.Text>
-                    </Card.Body>
-                  </Card>
-                ))}
-              </Slider>
-            </div>
-          </Col>
+          <div className="slider-container mt-4">
+            <Slider {...settings}>
+              {products.map((data) => (
+                <Card key={data.id} className="d-flex h-100 border-0">
+                  <Card.Img src={data.imgUrl} alt="" />
+                  <Card.Body className="h-100 m-0">
+                    <Card.Text>{data.discount}</Card.Text>
+
+                    <Card.Title className="mt-auto ">{data.title}</Card.Title>
+                  </Card.Body>
+                </Card>
+              ))}
+            </Slider>
+          </div>
         </Row>
       </Container>
     </>

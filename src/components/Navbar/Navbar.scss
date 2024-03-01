@@ -11,16 +11,19 @@ navbar{
 
     }
 
-    .center-column{
-
-    }
-    .right-column{
-
+    .navbar-brand img{
+        width: 150px;
     }
 
-    
+    .input-group{
+        width: 450px;
+    }
+
+
     .btn-search{
         background-color:  #FF7900 !important;
+        border-radius: 0 10px 10px 0;
+        border: 0;
     }
 
     .form-control:focus{

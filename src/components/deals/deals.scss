@@ -1,24 +1,28 @@
-
-
-.deals{
-
-
-
-}
-
-
-.slider{
-
-    .slick-track{
-        width: 100%;
-        display: flex;
+.slick-slider {
+  .slick-slide {
+    div {
+      margin-right: 10px;
     }
+  }
+  .slick-prev {
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 2;left: -50px;
+    height: 37px;
+    width: 35px;
 
-    .slider-prev{
+  }
 
-    }
+  .slick-next {
+    z-index: 2;
+    background-color: orange;
+    border-radius: 50%;
+    right: -50px;
+    height: 37px;
+    width: 35px;
+  }
 
-    .slider-next{
-
-    }
+  .card-title{
+    height: 50px;
+  }
 }

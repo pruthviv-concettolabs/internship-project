@@ -30,7 +30,7 @@ const NavigationBar = () => {
 
               <Col xs={5} className="center-column">
                 <Form>
-                  <InputGroup className=" w-100 m-0">
+                  <InputGroup className="  m-0">
                     <Form.Control
                       placeholder="Search Products"
                       aria-label="Search Products"

@@ -13,22 +13,6 @@ const Trending = () => {
     <>
       <section className="trending">
         <Container>
-          {/* <Row>
-            <div className="d-flex justify-content-between  align-content-center mb-4">
-              <div className="d-flex">
-                <h2 className="fw-bold text-left">Trending on BargainFox</h2>
-              </div>
-
-              <div className="d-flex align-items-end ">
-                <p className="fw-bold p-0 me-2">View All Deals</p>
-                <img
-                  src={rightBtn}
-                  className="align-self-center "
-                  alt="right-btn"
-                />
-              </div>
-            </div>
-          </Row> */}
           <Row>
             <div className="d-flex justify-content-between mb-2 mb-md-4 align-items-center  p-0">
               <div className="d-flex">

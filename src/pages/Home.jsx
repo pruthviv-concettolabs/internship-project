@@ -1,14 +1,16 @@
 import Category from "../components/category/Category";
 import DealGroup from "../components/dealgroup/DealGroup";
-import Deals from "../components/deals/Deals";
+import Deal from "../components/deal/Deal";
 import Trending from "../components/trending/Trending";
+import Garden from "../components/garden/Garden";
 const Home = () => {
   return (
     <>
       <Category />
-      <Deals />
+      <Deal />
       <Trending />
       <DealGroup />
+      <Garden />
     </>
   );
 };

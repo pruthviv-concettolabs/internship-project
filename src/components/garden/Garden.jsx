@@ -1,25 +1,30 @@
-import { Container, Row, Card } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
-import "./deals.scss";
+import "./garden.scss";
+
 import rightBtn from "../../img/Group 24.svg";
+
 import Slider from "react-slick";
-import products from "./products.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const Deals = () => {
+
+import product from "../productCard/product.js";
+import ProductCard from "../productCard/ProductCard";
+
+const Garden = () => {
   var settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 5,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           infinite: true,
           dots: true,
         },
@@ -43,18 +48,13 @@ const Deals = () => {
   };
   return (
     <>
-      <section className="deals">
+      <section className="garden">
         <Container>
           <Row>
             <div className="d-flex justify-content-between mb-2 mb-md-4 align-items-center  p-0">
-              <div className="d-flex">
-                <h2 className="fw-bold text-left m-0">Deals of the Day</h2>
-
-                <div className="d-flex  ps-3 ">
-                  <h4 className="text-muted align-self-end  fw-bold m-0">
-                    Ends in
-                  </h4>
-                </div>
+              <div className="d-flex main-heading">
+                <h2 className="fw-bold text-left m-0">Garden & DIY</h2>
+                <span>best deals</span>
               </div>
 
               <Nav.Link
@@ -70,20 +70,19 @@ const Deals = () => {
             </div>
           </Row>
 
-          {/* slider  */}
-
           <Row>
             <div className="slider-container mt-4 p-0">
               <Slider {...settings}>
-                {products.map((data) => (
-                  <Card key={data.id} className="d-flex h-100 border-0">
-                    <Card.Img src={data.imgUrl} alt="" />
-                    <Card.Body className="h-100 m-0">
-                      <Card.Text>{data.discount}</Card.Text>
-
-                      <Card.Title className="mt-auto ">{data.title}</Card.Title>
-                    </Card.Body>
-                  </Card>
+                {product.map((data) => (
+                  <ProductCard
+                    key={data.id}
+                    id={data.id}
+                    imgUrl={data.imgUrl}
+                    description={data.description}
+                    price={data.price}
+                    originalPrice={data.originalPrice}
+                    discount={data.discount}
+                  />
                 ))}
               </Slider>
             </div>
@@ -94,4 +93,4 @@ const Deals = () => {
   );
 };
 
-export default Deals;
+export default Garden;

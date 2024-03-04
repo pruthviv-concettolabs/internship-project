@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <footer>
         <Container>
-          <Row className="pt-5 ">
+          <Row>
             <Col md={4}>
               <h4 className="pb-4 ">Help</h4>
 
@@ -65,7 +65,7 @@ const Footer = () => {
             </Col>
           </Row>
 
-          <Row className="pt-4 pb-3 cust-border">
+          <Row className="pt-4  cust-border">
             <Col className="col-md-4 d-flex align-bottom">
               <div className="social-icon d-flex pe-1">
                 <img src={fb} alt="fb" />

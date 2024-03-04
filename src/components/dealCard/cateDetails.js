@@ -4,7 +4,7 @@ import CasualShoes from "../../img/model-tying-shoelaces-suede-sneaker.png";
 import sportShoes from "../../img/closeup-jogger-man-near-sea.png";
 import jewelry from "../../img/expensive-golden-ring-with-white-powder-background.png";
 import sunglasses from "../../img/top-view-sunglasses-with-passport.png";
-const products = [
+const cateDetails = [
   {
     id: 1,
     imgUrl: womenDress,
@@ -43,4 +43,4 @@ const products = [
   },
 ];
 
-export default products;
+export default cateDetails;

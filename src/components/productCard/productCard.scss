@@ -1,0 +1,21 @@
+.cust-card {
+  .card-body {
+    p {
+      font-size: 16px;
+    }
+
+    .price-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .price {
+        display: flex;
+        align-items: center;
+
+        .real-price {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

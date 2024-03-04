@@ -1,0 +1,28 @@
+.deal-group {
+  margin-bottom: 90px;
+
+  .col {
+    padding: 0%;
+  }
+  .deal-sub {
+    #cust-h4 {
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+    h4 {
+      //   margin-bottom: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #ff7900;
+      text-align: center;
+      display: block;
+    }
+  }
+}

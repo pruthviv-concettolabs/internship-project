@@ -3,12 +3,11 @@ import {
   Container,
   Row,
   Col,
-  Nav,
   Form,
   InputGroup,
   Button,
 } from "react-bootstrap";
-
+import Nav from "react-bootstrap/Nav";
 import "../Navbar/Navbar.scss";
 import logo from "../../img/brand-logo.png";
 import searchIcon from "../../img/search-normal.svg";

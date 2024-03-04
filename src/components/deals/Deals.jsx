@@ -1,4 +1,5 @@
 import { Container, Row, Card } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import "./deals.scss";
 import rightBtn from "../../img/Group 24.svg";
 import Slider from "react-slick";
@@ -42,47 +43,53 @@ const Deals = () => {
   };
   return (
     <>
-      <Container className="deals">
-        <Row>
-          <div className="d-flex justify-content-between  align-content-center">
-            <div className="d-flex">
-              <h2 className="fw-bold text-left">Deals of the Day</h2>
+      <section className="deals">
+        <Container>
+          <Row>
+            <div className="d-flex justify-content-between mb-2 mb-md-4 align-items-center  p-0">
+              <div className="d-flex">
+                <h2 className="fw-bold text-left m-0">Deals of the Day</h2>
 
-              <div className="d-flex  ps-3 ">
-                <h4 className="text-muted align-self-end  fw-bold ">Ends in</h4>
+                <div className="d-flex  ps-3 ">
+                  <h4 className="text-muted align-self-end  fw-bold m-0">
+                    Ends in
+                  </h4>
+                </div>
               </div>
+
+              <Nav.Link
+                href="#"
+                className="d-flex align-items-end text-decoration-none custom-link">
+                <span className="fw-bold p-0 ">View All Deals</span>
+                <img
+                  src={rightBtn}
+                  className="align-self-center "
+                  alt="right-btn"
+                />
+              </Nav.Link>
             </div>
+          </Row>
 
-            <div className="d-flex align-items-end ">
-              <p className="fw-bold p-0 me-2">View All Deals</p>
-              <img
-                src={rightBtn}
-                className="align-self-center "
-                alt="right-btn"
-              />
+          {/* slider  */}
+
+          <Row>
+            <div className="slider-container mt-4 p-0">
+              <Slider {...settings}>
+                {products.map((data) => (
+                  <Card key={data.id} className="d-flex h-100 border-0">
+                    <Card.Img src={data.imgUrl} alt="" />
+                    <Card.Body className="h-100 m-0">
+                      <Card.Text>{data.discount}</Card.Text>
+
+                      <Card.Title className="mt-auto ">{data.title}</Card.Title>
+                    </Card.Body>
+                  </Card>
+                ))}
+              </Slider>
             </div>
-          </div>
-        </Row>
-
-        {/* slider  */}
-
-        <Row>
-          <div className="slider-container mt-4">
-            <Slider {...settings}>
-              {products.map((data) => (
-                <Card key={data.id} className="d-flex h-100 border-0">
-                  <Card.Img src={data.imgUrl} alt="" />
-                  <Card.Body className="h-100 m-0">
-                    <Card.Text>{data.discount}</Card.Text>
-
-                    <Card.Title className="mt-auto ">{data.title}</Card.Title>
-                  </Card.Body>
-                </Card>
-              ))}
-            </Slider>
-          </div>
-        </Row>
-      </Container>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };

@@ -1,0 +1,54 @@
+.garden {
+  .main-heading {
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--secondary-color);
+      background-color: #f5f5fc;
+      border-radius: 16px;
+      padding: 8px 16px;
+      margin-left: 12px;
+      text-transform: capitalize;
+    }
+  }
+
+  .custom-link {
+    color: #292d32;
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  .slick-slider {
+    .slick-slide {
+      .cust-card {
+        padding: 0 12px 0 0;
+        height: auto;
+        cursor: pointer;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+    }
+    .slick-prev {
+      background-color: orange;
+      border-radius: 50%;
+      z-index: 2;
+      left: -50px;
+      height: 37px;
+      width: 35px;
+    }
+
+    .slick-next {
+      z-index: 2;
+      background-color: orange;
+      border-radius: 50%;
+      right: -50px;
+      height: 37px;
+      width: 35px;
+    }
+
+    .card-title {
+      // height: 50px;
+    }
+  }
+}

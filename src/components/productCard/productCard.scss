@@ -1,4 +1,5 @@
 .cust-card {
+  margin-bottom: 90px;
   .card-body {
     p {
       font-size: 16px;
@@ -12,9 +13,25 @@
         display: flex;
         align-items: center;
 
+        .currency-type {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .currency {
+          font-size: 30px;
+          font-weight: 600;
+        }
         .real-price {
           margin-left: 10px;
         }
+      }
+      .discount {
+        line-height: 37px;
+        width: 50px;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        background: orange;
       }
     }
   }

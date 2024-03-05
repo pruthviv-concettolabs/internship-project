@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import { Card } from "react-bootstrap";
 import "./productCard.scss";
 const ProductCard = ({
@@ -28,9 +27,11 @@ const ProductCard = ({
                 <span className="currency-type"> ₹</span>
                 <span className="currency">{price}</span>
               </div>
-              <span className="real-price">{originalPrice}</span>
+              <span className="real-price">
+                <del>₹{originalPrice}</del>
+              </span>
             </div>
-            <div className="discount">
+            <div className="discount  rounded-circle">
               {discount}
               <span>%</span>
             </div>

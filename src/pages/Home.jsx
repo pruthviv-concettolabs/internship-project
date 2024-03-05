@@ -3,6 +3,7 @@ import DealGroup from "../components/dealgroup/DealGroup";
 import Deal from "../components/deal/Deal";
 import Trending from "../components/trending/Trending";
 import Garden from "../components/garden/Garden";
+import Electronics from "../components/electronics/Electronics";
 const Home = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const Home = () => {
       <Trending />
       <DealGroup />
       <Garden />
+      <Electronics />
     </>
   );
 };

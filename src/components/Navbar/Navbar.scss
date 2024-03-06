@@ -31,4 +31,27 @@
     outline: 0;
     box-shadow: none;
   }
+
+  .right-column {
+    .dropdown-wrapper {
+      position: relative;
+
+      .dropdown-wrapper:hover {
+        .right-column .dropdown-wrapper .dropdown-body {
+          display: block;
+        }
+      }
+      .dropdown-body {
+        position: absolute;
+        border-radius: 2%;
+        top: 65px;
+        right: 0;
+
+        .btn {
+          color: white;
+          background: #ff7900;
+        }
+      }
+    }
+  }
 }

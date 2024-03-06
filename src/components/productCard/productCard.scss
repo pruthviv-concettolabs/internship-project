@@ -1,5 +1,11 @@
 .cust-card {
   margin-bottom: 90px;
+
+  .card {
+    border: 2px solid #f5f5fc;
+    border-radius: 20px;
+  }
+
   .card-body {
     p {
       font-size: 16px;

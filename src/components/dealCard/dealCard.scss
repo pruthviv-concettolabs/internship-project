@@ -31,9 +31,19 @@
       height: 37px;
       width: 35px;
     }
+    .card {
+      border: 2px solid #f5f5fc;
+      border-radius: 20px;
 
-    .card-title {
-      height: 50px;
+      .card-body {
+        p {
+          margin-bottom: 10px;
+        }
+        .card-title {
+          height: 50px;
+          font-size: 16px;
+        }
+      }
     }
   }
 }

@@ -21,12 +21,17 @@
 
   .slick-slider {
     .slick-slide {
+      padding: 0px 12px;
       .cust-card {
         padding: 0 12px 0 0;
         height: auto;
         cursor: pointer;
         border-radius: 20px;
         overflow: hidden;
+        .card {
+          border: 2px solid #f5f5fc;
+          border-radius: 20px;
+        }
       }
     }
     .slick-prev {

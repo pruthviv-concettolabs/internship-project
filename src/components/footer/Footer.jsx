@@ -1,34 +1,36 @@
 import "./footer.scss";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import fb from "../../img/Facebook Icon.svg";
 import twitter from "../../img/Vector.svg";
 import ig from "../../img/instagram.svg";
 import pinterest from "../../img/pinterest.svg";
+import { Link } from "react-router-dom";
+Link;
 
 const Footer = () => {
   return (
     <>
       <footer>
         <Container>
-          <Row>
-            <Col md={4}>
+          <div className="wrapper d-flex justify-content-between">
+            <div className="footer-list">
               <h4 className="pb-4 ">Help</h4>
 
               <ul className="list-unstyled">
                 <li className="pb-4 ">
-                  <a href="#">Delivery</a>
+                  <Link to="/#">Delivery</Link>
                 </li>
                 <li className="pb-4 ">
-                  <a href="#">Returns</a>
+                  <Link href="#">Returns</Link>
                 </li>
                 <li className="pb-4 ">
-                  <a href="#">Help Centre</a>
+                  <Link href="#">Help Centre</Link>
                 </li>
               </ul>
-            </Col>
+            </div>
 
             {/* second part */}
-            <Col md={4}>
+            <div className="footer-list">
               <h4 className="pb-4">About Us</h4>
 
               <ul className="list-unstyled">
@@ -42,10 +44,10 @@ const Footer = () => {
                   <a href="#">Help Centre</a>
                 </li>
               </ul>
-            </Col>
+            </div>
 
             {/* Third part */}
-            <Col md={4}>
+            <div className="footer-list">
               <h4 className="pb-4">Your Account</h4>
 
               <ul className="list-unstyled">
@@ -62,12 +64,12 @@ const Footer = () => {
                   <a href="#">FastFox Subscription</a>
                 </li>
               </ul>
-            </Col>
-          </Row>
+            </div>
+          </div>
 
-          <Row className="pt-4  cust-border">
-            <Col className="col-md-4 d-flex align-bottom">
-              <div className="social-icon d-flex pe-1">
+          <Row className="pt-4  cust-border d-flex justify-content-between">
+            <Col className="col-md-4 d-flex ">
+              {/* <div className="social-icon d-flex pe-1">
                 <img src={fb} alt="fb" />
               </div>
               <div className="social-icon d-flex ">
@@ -78,13 +80,49 @@ const Footer = () => {
               </div>
               <div className="social-icon d-flex ">
                 <img src={pinterest} alt="fb" />
+              </div> */}
+              <div className=" d-flex icon-list ">
+                <ul className="list-unstyled">
+                  <li>
+                    <a>
+                      <img src={fb} alt="fb" />
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <img src={twitter} alt="fb" />
+                    </a>
+                  </li>{" "}
+                  <li>
+                    <a>
+                      <img src={ig} alt="fb" />
+                    </a>
+                  </li>{" "}
+                  <li>
+                    <a>
+                      <img src={pinterest} alt="pinterest" />
+                    </a>
+                  </li>
+                </ul>
               </div>
             </Col>
             <Col className="col-md-4 ">
-              <p>All rights reserved © 2023 BargainFox.com</p>
+              <p className="text-center">
+                All rights reserved © 2023{" "}
+                <a href="#" className="cursor-pointer">
+                  BargainFox.com
+                </a>
+              </p>
             </Col>
-            <Col className="col-md-4 ">
-              <p>Terms of Service | Privacy Policy</p>
+            <Col className="col-md-4 text-end third-ft-part">
+              <ul className="list-unstyled d-flex justify-content-end">
+                <li id="first-li">
+                  <a href="#">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
             </Col>
           </Row>
         </Container>

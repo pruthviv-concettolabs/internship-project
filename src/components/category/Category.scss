@@ -4,7 +4,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 50px;
+      gap: 35px;
 
       .category-list {
         img {
@@ -17,6 +17,8 @@
           font-size: 18px;
           font-weight: 600;
           color: #292d32;
+          display: flex;
+          justify-content: center;
         }
       }
     }

@@ -11,7 +11,7 @@ const ProductCard = ({
 }) => {
   return (
     <div className="cust-card">
-      <Card key={id} className="d-flex h-100 border-0">
+      <Card key={id} className="d-flex h-100 ">
         <Card.Img src={imgUrl} alt="" />
         <Card.Body className="h-100 m-0">
           <Card.Title>

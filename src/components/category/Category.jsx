@@ -16,7 +16,7 @@ const Category = () => {
         <section>
           <Container className="category-container">
             <Row className="justify-content-md-center py-4">
-              <div className="category-wrap">
+              <div className="category-wrap col-12">
                 <div className="category-list">
                   <img src={kitchen} alt="Home and Kitchen" />
                   <Link className="title">Home and Kitchen</Link>

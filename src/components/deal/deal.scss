@@ -9,13 +9,19 @@
   }
 
   .slick-slider {
+    .slick-list {
+      .slick-track {
+        margin-right: 0px;
+      }
+    }
+
     .slick-slide {
       div {
         padding-right: 12px;
       }
     }
     .slick-prev {
-      background-color: orange;
+      background-color: #0063ff;
       border-radius: 50%;
       z-index: 2;
       left: -50px;
@@ -25,13 +31,15 @@
 
     .slick-next {
       z-index: 2;
-      background-color: orange;
+      background-color: #0063ff;
       border-radius: 50%;
       right: -50px;
       height: 37px;
       width: 35px;
     }
-
+    ul {
+      display: none !important;
+    }
     .card-title {
       height: 50px;
     }

@@ -11,11 +11,13 @@ import {
 import { Link } from "react-router-dom";
 
 import "../Navbar/Navbar.scss";
-import logo from "../../img/brand-logo.png";
+import logo from "../../img/eCart.svg";
 import searchIcon from "../../img/search-normal.svg";
 import heart from "../../img/heart.svg";
 import cart from "../../img/shopping-cart.svg";
 import user from "../..//img/user.svg";
+import { GiHamburgerMenu } from "react-icons/gi";
+import SignUp from "./SignUp";
 const NavigationBar = () => {
   const menus = [
     "Your Profile",
@@ -26,81 +28,96 @@ const NavigationBar = () => {
   ];
   return (
     <>
-      <header>
-        <Navbar className="nav-main" expanded="lg">
-          <Container fluid>
-            <Row className="w-100 p-2  align-items-center d-flex justify-content-center">
-              <Col className="left-column">
-                <Navbar.Brand href="/">
-                  <img src={logo} className="img-fluid" />
-                </Navbar.Brand>
-              </Col>
+      <header className="nav-main ">
+        <Container fluid className="flex-sm-column">
+          <Row className="w-100   align-items-center d-flex justify-content-center ">
+            <Col className="left-column ">
+              <GiHamburgerMenu className="d-md-none fs-2" />
 
-              <Col xs={5} className="center-column">
-                <Form>
-                  <InputGroup className="  m-0">
-                    <Form.Control
-                      placeholder="Search Products"
-                      aria-label="Search Products"
-                    />
-                    <Button className="btn-search">
-                      <img src={searchIcon} className="icon" alt="search box" />
-                    </Button>
-                  </InputGroup>
-                </Form>
-              </Col>
-              <Col className="right-column">
-                <ul className="nav justify-content-end align-items-center">
-                  <li className="nav-item">
-                    <Link to="/#" className="nav-link">
-                      <img src={heart} alt="Heart" />
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/#" className="nav-link">
-                      <img src={cart} alt="Cart" />
-                    </Link>
-                  </li>{" "}
-                  <li className="nav-item">
-                    <div className="dropdown-wrapper">
-                      <div className="d-flex align-items-center">
-                        {/* <Link> for menu bar</Link> */}
+              <Navbar.Brand href="/">
+                <img src={logo} className="img-fluid" />
+              </Navbar.Brand>
+            </Col>
 
-                        <Link to="/#" className="me-2">
-                          <img src={user} alt="user" />
-                        </Link>
+            <Col className="center-column justify-content-center d-none d-md-flex    ">
+              <Form>
+                <InputGroup className=" col-12 m-0">
+                  <Form.Control
+                    placeholder="Search Products"
+                    aria-label="Search Products"
+                  />
+                  <Button className="btn-search">
+                    <img src={searchIcon} className="icon" alt="search box" />
+                  </Button>
+                </InputGroup>
+              </Form>
+            </Col>
+            <Col className="right-column btn ">
+              <ul className="nav justify-content-end align-items-center">
+                <li className="nav-item">
+                  <Link to="/#" className="nav-link col">
+                    <img src={heart} alt="Heart" />
+                  </Link>
+                </li>
+                <li className="nav-item ">
+                  <Link to="/#" className="nav-link">
+                    <img src={cart} alt="Cart" />
+                  </Link>
+                </li>{" "}
+                <li className="nav-item  ">
+                  <div className="dropdown-wrapper">
+                    <div className="d-flex align-items-center">
+                      <Link to="/#" className="me-2">
+                        <img src={user} alt="user" />
+                      </Link>
 
-                        <Link
-                          to="/#"
-                          className="text-decoration-none dropdown user-details text-end">
-                          <p className="m-0">Hello there,</p>
-                          <span className="text-uppercase fw-bold">
-                            SIGN IN/REGISTER
-                          </span>
-                        </Link>
-                      </div>{" "}
-                      <div className="dropdown-body-wrapper  ">
-                        <div className="bg-white shadow-lg  dropdown-item dropdown-body absolute w-auto ">
-                          <div className="btn dropdown-item mb-3 rounded-4">
-                            Login/Register
-                          </div>
-
-                          <ul className="list-unstyled text-muted text-start">
-                            {menus.map((item, index) => (
-                              <li key={index} className="dropdown-item">
-                                <Link to="/# "> {item}</Link>
-                              </li>
-                            ))}
-                          </ul>
+                      <Link
+                        to="/#"
+                        className="text-decoration-none d-none d-xl-block dropdown user-details text-end">
+                        <p className="m-0">Hello there,</p>
+                        <span className="text-uppercase fw-bold">
+                          SIGN IN/REGISTER
+                        </span>
+                      </Link>
+                    </div>
+                    <div className="dropdown-body-wrapper  ">
+                      <div className="bg-white shadow-lg  dropdown-item dropdown-body absolute w-auto ">
+                        <div className="dropdown-btn ">
+                          <SignUp />
                         </div>
+
+                        <ul className="list-unstyled text-muted text-start">
+                          {menus.map((item, index) => (
+                            <li key={index} className="dropdown-item">
+                              <Link to="/# "> {item}</Link>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
-          </Container>
-        </Navbar>
+                  </div>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+
+          {/* search bottom  */}
+          <Row className="w-100 d-md-none d-flex">
+            <Col className="center-column col-12 col-sm-12   ">
+              <Form className="w-100">
+                <InputGroup className=" col-12 w-100 m-0">
+                  <Form.Control
+                    placeholder="Search Products"
+                    aria-label="Search Products"
+                  />
+                  <Button className="btn-search">
+                    <img src={searchIcon} className="icon" alt="search box" />
+                  </Button>
+                </InputGroup>
+              </Form>
+            </Col>
+          </Row>
+        </Container>
       </header>
     </>
   );

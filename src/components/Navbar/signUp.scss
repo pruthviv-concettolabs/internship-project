@@ -1,0 +1,45 @@
+.modal-content {
+  border-radius: 20px;
+
+  .modal-body {
+    .cust-title {
+      margin-bottom: 51px;
+      h4 {
+        font-size: 36px !important;
+        color: #292d32 !important;
+        margin-bottom: 12px;
+        flex-flow: column;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      p {
+        color: #707070;
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    form {
+      label {
+        color: #000000b3;
+        font-weight: 600;
+      }
+      input {
+        background: #f2f2f8;
+        border-radius: 27px;
+        height: 54px;
+      }
+      .form-control:focus {
+        background-color: #f2f2f8;
+      }
+    }
+    .form-btn {
+      border: 0;
+      border-radius: 26px;
+      background-color: #0063ff;
+      padding: 15px 0px;
+      width: 100%;
+    }
+  }
+}

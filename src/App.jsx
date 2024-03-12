@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import ProductList from "./pages/Productlist/ProductList";
 import Footer from "./components/footer/Footer";
 import Login from "./pages/login/Login";
-
+import ProductDetail from "./pages/productDetail/ProductDetail";
 const App = () => {
   return (
     <>
@@ -14,7 +14,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productList" element={<ProductList />} />
-        <Route path="login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/productDetail" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </>

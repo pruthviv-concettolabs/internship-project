@@ -17,7 +17,7 @@ const Category = () => {
           <Container className="category-container">
             <Row className="justify-content-md-center py-4">
               <div className="category-wrap col-12">
-                <div className="category-list">
+                <div className="category-list dropdown">
                   <img src={kitchen} alt="Home and Kitchen" />
                   <Link className="title">Home and Kitchen</Link>
                 </div>
@@ -29,15 +29,15 @@ const Category = () => {
                   <img src={electric} alt="Electronics" />
                   <Link className="title">Electronics</Link>
                 </div>
-                <div className="category-list">
+                <div className="category-list  ">
                   <img src={toy} alt="Toys & Crafts" />
                   <Link className="title">Toys & Crafts</Link>
                 </div>
-                <div className="category-list">
+                <div className="category-list d-none d-md-block">
                   <img src={sport} alt="Sports & Leisure" />
                   <Link className="title">Sports & Leisure</Link>
                 </div>
-                <div className="category-list">
+                <div className="category-list d-none d-md-block ">
                   <img src={Clearance} alt="Clearance" />
                   <Link className="title">Clearance</Link>
                 </div>

@@ -1,7 +1,17 @@
 import { Col, Form, Row } from "react-bootstrap";
 import "./filterbox.scss";
+import Price from "./Price";
+import Discount from "./Discount";
 
 const FilterBox = () => {
+  const checkboxLabels = [
+    "Open Box",
+    "Brand New",
+    "Like New",
+    "Very Good",
+    "Good",
+    "Acceptable",
+  ];
   return (
     <>
       <div className="filter-wrapper">
@@ -13,40 +23,16 @@ const FilterBox = () => {
             <div className="filterOptionbox  ">
               <div className="  form-radio  ">
                 <Form>
-                  {["checkbox"].map((type) => (
-                    <div key={`default-${type}`} className="mb-3">
-                      <Form.Check
-                        type={type}
-                        id={`OpenBox`}
-                        label={`Open Box`}
-                      />
-                      <Form.Check
-                        type={type}
-                        id={`BrandNew`}
-                        label={`Brand New`}
-                      />
-                      <Form.Check
-                        type={type}
-                        id={`likeNew`}
-                        label={`Like New`}
-                      />
-
-                      <Form.Check
-                        type={type}
-                        id={`veryGood`}
-                        label={`Very Good`}
-                      />
-                      <Form.Check type={type} id={`good`} label={`Good`} />
-                      <Form.Check
-                        type={type}
-                        id={`acceptable`}
-                        label={`Acceptable`}
-                      />
+                  {checkboxLabels.map((label) => (
+                    <div key={label} className="mb-3">
+                      <Form.Check type="checkbox" id={label} label={label} />
                     </div>
                   ))}
                 </Form>
               </div>
             </div>
+            <Price />
+            <Discount />
           </Col>
         </Row>
       </div>

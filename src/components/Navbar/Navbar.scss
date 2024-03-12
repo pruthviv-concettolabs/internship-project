@@ -2,31 +2,26 @@
 @media (max-width: 1200px) {
   header {
     padding: 5px 18px !important;
-    .nav-main {
-      .input-group {
-        width: 450px !important;
-      }
-    }
   }
 }
 
 @media (max-width: 992px) {
   header {
     padding: 5px 0px !important;
-    .nav-main {
-      .input-group {
-        width: 450px !important;
-      }
-    }
+  }
+  .nav-main .center-column form .input-group {
+    width: 348px !important;
   }
 }
 
 // Medium devices (tablets)
+// Medium devices (tablets)
 @media (max-width: 768px) {
   header {
     padding: 5px 0px !important;
-    .nav-main {
-    }
+  }
+  .nav-main .center-column form .input-group {
+    width: 100% !important;
   }
 }
 

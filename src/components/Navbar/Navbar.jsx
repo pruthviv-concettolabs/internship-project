@@ -32,14 +32,14 @@ const NavigationBar = () => {
         <Container fluid className="flex-sm-column">
           <Row className="w-100   align-items-center d-flex justify-content-center ">
             <Col className="left-column ">
-              <GiHamburgerMenu className="d-md-none fs-2" />
+              <GiHamburgerMenu className="d-md-none me-sm-2 fs-2" />
 
               <Navbar.Brand href="/">
                 <img src={logo} className="img-fluid" />
               </Navbar.Brand>
             </Col>
 
-            <Col className="center-column justify-content-center d-none d-md-flex    ">
+            <Col className="center-column  d-none d-md-flex    ">
               <Form>
                 <InputGroup className=" col-12 m-0">
                   <Form.Control

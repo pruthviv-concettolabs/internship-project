@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
 
           <Row className="pt-4  cust-border d-flex justify-content-between">
-            <Col className="col-md-4 d-flex ">
+            <Col className="col-xl-4 first-col d-flex col-12  ">
               {/* <div className="social-icon d-flex pe-1">
                 <img src={fb} alt="fb" />
               </div>
@@ -106,7 +106,7 @@ const Footer = () => {
                 </ul>
               </div>
             </Col>
-            <Col className="col-md-4 ">
+            <Col className="col-xl-4 col-12">
               <p className="text-center">
                 All rights reserved © 2023{" "}
                 <a href="#" className="cursor-pointer">
@@ -114,8 +114,8 @@ const Footer = () => {
                 </a>
               </p>
             </Col>
-            <Col className="col-md-4 text-end third-ft-part">
-              <ul className="list-unstyled d-flex justify-content-end">
+            <Col className="col-xl-4 col-12 text-end third-ft-part">
+              <ul className="list-unstyled d-flex justify-content-end ">
                 <li id="first-li">
                   <a href="#">Terms of Service</a>
                 </li>

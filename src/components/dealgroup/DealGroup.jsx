@@ -10,14 +10,14 @@ const DealGroup = () => {
       <section className="deal-group">
         <Container>
           <Row className="justify-content-center ">
-            <Col className="col-xxl-4 col-12">
+            <Col className="col-xxl-4 col-12 col-xl-4 col-md-4 col-sm-6 col-xs-6 ">
               <div className="deal-sub">
                 <img src={yellowImg} className="img-fluid" alt="card" />{" "}
                 <h4 className="text-center">Deals of the Week</h4>
                 <a href="#">View All Products</a>
               </div>
             </Col>
-            <Col className="col-xxl-4 col-12">
+            <Col className="col-xxl-4 col-12 col-xl-4 col-md-4 col-sm-6 col-xs-6">
               <div className="deal-sub">
                 <img src={trending} className="img-fluid" alt="trending " />{" "}
                 <h4 className="text-center" id="cust-h4">
@@ -27,7 +27,7 @@ const DealGroup = () => {
               </div>
             </Col>
 
-            <Col className="col-xxl-4 col-12">
+            <Col className="col-xxl-4 col-12 col-xl-4 col-md-4 col-sm-6 col-xs-6">
               <div className="deal-sub">
                 <img src={clearance} className="img-fluid" alt="card" />{" "}
                 <h4 className="text-center">clearance</h4>

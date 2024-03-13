@@ -1,0 +1,35 @@
+.custom-breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  ol {
+    padding: 20px 0px;
+  }
+  .active {
+    color: #292d32;
+  }
+  li {
+    &::before {
+      content: none;
+    }
+    display: inline;
+    &::after {
+      content: ">";
+      margin: 0 0.5rem;
+    }
+  }
+
+  li:last-child::after {
+    content: none;
+  }
+
+  li a {
+    text-decoration: none;
+    content: none;
+    color: gray;
+  }
+  li a .active {
+    color: #292d32;
+  }
+}

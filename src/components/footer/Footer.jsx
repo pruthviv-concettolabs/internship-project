@@ -114,7 +114,7 @@ const Footer = () => {
                 </a>
               </p>
             </Col>
-            <Col className="col-xl-4 col-12 text-end third-ft-part">
+            <Col className="col-xl-4  text-end third-ft-part">
               <ul className="list-unstyled d-flex justify-content-end ">
                 <li id="first-li">
                   <a href="#">Terms of Service</a>

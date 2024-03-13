@@ -1,14 +1,17 @@
-import { Col, Row, Container, Breadcrumb, Form } from "react-bootstrap";
+import { Col, Row, Container, Form } from "react-bootstrap";
 import "./productList.scss";
 import ProductCard from "./ProductCard";
 import FilterBox from "./FilterBox";
+import BreadCrumb from "../../components/breadcrumb/BreadCrumb";
 
 const ProductList = () => {
   return (
     <>
       <section className="product-list">
         <Container>
-          <Row className="mb-4">
+          <BreadCrumb />
+
+          {/* <Row className="mb-4">
             <Breadcrumb className="custom-breadcrumb">
               <Breadcrumb.Item
                 href="#"
@@ -22,7 +25,7 @@ const ProductList = () => {
               </Breadcrumb.Item>
               <Breadcrumb.Item active>Data</Breadcrumb.Item>
             </Breadcrumb>
-          </Row>
+          </Row> */}
           <Row>
             <Col className="col-lg-3 d-lg-flex d-none">
               <FilterBox />

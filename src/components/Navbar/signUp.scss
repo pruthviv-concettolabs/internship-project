@@ -30,8 +30,9 @@
         border-radius: 27px;
         height: 54px;
       }
-      .form-control:focus {
+      &.form-control:focus {
         background-color: #f2f2f8;
+        box-shadow: none;
       }
     }
     .form-btn {

@@ -57,11 +57,13 @@ const NavigationBar = () => {
                 <li className="nav-item">
                   <Link to="/#" className="nav-link col">
                     <img src={heart} alt="Heart" />
+                    <div className="card-amount">0</div>
                   </Link>
                 </li>
                 <li className="nav-item ">
                   <Link to="/#" className="nav-link">
                     <img src={cart} alt="Cart" />
+                    <div className="card-amount">0</div>
                   </Link>
                 </li>{" "}
                 <li className="nav-item  ">

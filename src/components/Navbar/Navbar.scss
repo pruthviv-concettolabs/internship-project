@@ -8,6 +8,13 @@
 @media (max-width: 992px) {
   header {
     padding: 5px 0px !important;
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  .nav-main .center-column {
+    padding: 0px;
   }
   .nav-main .center-column form .input-group {
     width: 348px !important;
@@ -58,6 +65,26 @@
   }
 
   .right-column {
+    .nav-link {
+      position: relative;
+
+      .card-amount {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 3px;
+        right: 7px;
+        width: 22px;
+        height: 22px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+        background-color: #0063ff;
+        border-radius: 50%;
+        color: #fff;
+      }
+    }
     .dropdown-wrapper {
       position: relative;
       display: inline-flex;

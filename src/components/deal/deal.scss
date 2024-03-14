@@ -1,3 +1,44 @@
+@media (max-width: 1200px) {
+  .slick-slider {
+    .slick-prev {
+      left: -24px !important;
+      height: 25px !important;
+      width: 25px !important;
+    }
+    .slick-next {
+      right: -18px !important;
+      height: 25px !important;
+      width: 25px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-slider {
+    .slick-prev {
+      left: -30px !important;
+      height: 25px !important;
+      width: 25px !important;
+    }
+    .slick-next {
+      right: -20px !important;
+      height: 25px !important;
+      width: 25px !important;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-slider {
+    .slick-prev {
+      display: none !important;
+    }
+    .slick-next {
+      display: none !important;
+    }
+  }
+}
+
 .deals {
   margin-bottom: 100px;
 
@@ -25,17 +66,40 @@
       border-radius: 50%;
       z-index: 2;
       left: -50px;
-      height: 37px;
-      width: 35px;
+      height: 24px;
+      width: 26px;
+      &.slick-prev:before {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: "slick";
+        font-size: 32px;
+        line-height: 1;
+        opacity: 1;
+        color: #f5f5fc;
+        -webkit-font-smoothing: antialiased;
+      }
     }
 
     .slick-next {
       z-index: 2;
       background-color: #0063ff;
       border-radius: 50%;
-      right: -50px;
-      height: 37px;
-      width: 35px;
+      right: -38px;
+      height: 24px;
+      width: 26px;
+
+      &.slick-next:before {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: "slick";
+        font-size: 32px;
+        line-height: 1;
+        opacity: 1;
+        color: #f5f5fc;
+        -webkit-font-smoothing: antialiased;
+      }
     }
     ul {
       display: none !important;

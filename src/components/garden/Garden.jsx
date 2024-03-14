@@ -2,6 +2,8 @@ import { Container, Row } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import "./garden.scss";
 
+import "./../deal/deal.scss";
+
 import rightBtn from "../../img/Group 24.svg";
 
 import Slider from "react-slick";

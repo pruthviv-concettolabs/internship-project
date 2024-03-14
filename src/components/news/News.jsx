@@ -7,10 +7,10 @@ const News = () => {
     <>
       <section className="news">
         <Container>
-          <Row className="align-items-center p-5">
-            <Col className="col-lg-7">
+          <Row className="align-items-center  p-5">
+            <Col className="col-lg-6 left-col">
               <Row>
-                <Col className="col-lg-10">
+                <Col className="col-xl-10">
                   <div className="main-section">
                     <h3>Subscribe to Our Newsletters</h3>
                     <p>
@@ -21,12 +21,12 @@ const News = () => {
                   </div>
                 </Col>
 
-                <Col className="col-lg-2 p-0 align-self-start">
+                <Col className="col-xl-2 p-0 center-col align-self-start">
                   <Image src={arrow} className="" />
                 </Col>
               </Row>
             </Col>
-            <Col lg={5} className="align-items-end">
+            <Col lg={6} className="right-col align-items-end">
               <div className="subscribe rounded-4">
                 <InputGroup>
                   <Form.Control

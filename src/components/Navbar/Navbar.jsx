@@ -52,7 +52,7 @@ const NavigationBar = () => {
                 </InputGroup>
               </Form>
             </Col>
-            <Col className="right-column btn ">
+            <Col className="right-column border-0 btn ">
               <ul className="nav justify-content-end align-items-center">
                 <li className="nav-item">
                   <Link to="/#" className="nav-link col">

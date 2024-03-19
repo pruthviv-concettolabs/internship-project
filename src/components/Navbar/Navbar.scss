@@ -58,8 +58,8 @@
   }
 
   .form-control:focus {
-    background-color: none;
-    border-color: none;
+    background-color: transparent;
+    border-color: rgb(222, 226, 230);
     outline: 0;
     box-shadow: none;
   }

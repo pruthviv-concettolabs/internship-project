@@ -1,10 +1,10 @@
-import Category from "../components/category/Category";
-import DealGroup from "../components/dealgroup/DealGroup";
-import Deal from "../components/deal/Deal";
-import Trending from "../components/trending/Trending";
-import Garden from "../components/garden/Garden";
-import Electronics from "../components/electronics/Electronics";
-import News from "../components/news/News";
+import Category from "../components/homeGroup/category/Category";
+import DealGroup from "../components/homeGroup/dealgroup/DealGroup";
+import Deal from "../components/homeGroup/deal/Deal";
+import Trending from "../components/homeGroup/trending/Trending";
+import Garden from "../components/homeGroup/garden/Garden";
+import Electronics from "../components/homeGroup/electronics/Electronics";
+import News from "../components/homeGroup/news/News";
 const Home = () => {
   return (
     <>

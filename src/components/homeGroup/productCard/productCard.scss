@@ -1,0 +1,44 @@
+.cust-card {
+  margin-bottom: 90px;
+
+  .card {
+    border: 2px solid #f5f5fc;
+    border-radius: 20px;
+  }
+
+  .card-body {
+    p {
+      font-size: 16px;
+    }
+
+    .price-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .price {
+        display: flex;
+        align-items: center;
+
+        .currency-type {
+          font-size: 24px;
+          font-weight: 600;
+        }
+        .currency {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .real-price {
+          margin-left: 10px;
+        }
+      }
+      .discount {
+        line-height: 37px;
+        width: 50px;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        background: #0063ff;
+      }
+    }
+  }
+}

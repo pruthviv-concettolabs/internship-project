@@ -1,0 +1,19 @@
+.cart-heading {
+  padding-bottom: 20px;
+  .cart-title {
+    align-items: baseline;
+    h2 {
+      font-size: 36px;
+      color: #292d32;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #a4a4b8;
+    }
+  }
+  .cart-wishlist {
+    display: flex;
+    align-items: center;
+  }
+}

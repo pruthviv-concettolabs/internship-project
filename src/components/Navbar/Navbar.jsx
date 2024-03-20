@@ -61,7 +61,7 @@ const NavigationBar = () => {
                   </Link>
                 </li>
                 <li className="nav-item ">
-                  <Link to="/#" className="nav-link">
+                  <Link to="/cart" className="nav-link">
                     <img src={cart} alt="Cart" />
                     <div className="card-amount">0</div>
                   </Link>

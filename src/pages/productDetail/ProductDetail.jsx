@@ -1,50 +1,39 @@
 import "./productDetail.scss";
 import {
-  Button,
   Col,
   Container,
-  Form,
   Image,
   ListGroup,
   ProgressBar,
   Row,
 } from "react-bootstrap";
 import share from "../../img/share.png";
-import Ruler from "../../img/Ruler.png";
-import van from "../../img/van.svg";
-import returnImg from "../../img/005-warranty.svg";
-import warranty from "../../img/Layer 2.svg";
+
 import Star from "../../components/star/Star";
-import people from "../../img/group (4).svg";
 import progressStar from "../../img/Polygon 3.svg";
 import bigStar from "../../img/star-big.svg";
 import rightImg from "../../img/Group 905349.png";
 import BreadCrumb from "../../components/breadcrumb/BreadCrumb.jsx";
 import { Link } from "react-router-dom";
 
-import { useState } from "react";
+import ProductThumbnail from "../../components/productDetailGroup/ProductThumbnail.jsx";
+import PriceDetails from "../../components/productDetailGroup/PriceDetails.jsx";
+import ColorFilter from "../../components/productDetailGroup/ColorFilter.jsx";
+import SizeFilter from "../../components/productDetailGroup/SizeFilter.jsx";
+import Quantity from "../../components/productDetailGroup/Quantity.jsx";
+import Conditions from "../../components/productDetailGroup/Conditions.jsx";
+import StockDetails from "../../components/productDetailGroup/StockDetails.jsx";
+import CartBtn from "../../components/productDetailGroup/CartBtn.jsx";
 
 const ProductDetail = () => {
-  const [count, setCount] = useState(0);
-  const addValue = () => {
-    setCount(count + 1);
-  };
-  const removeValue = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
-  };
   return (
     <>
       <BreadCrumb />
       <Container fluid className="product-container">
         <Row>
           <Col className="col-lg-6 ">
-            <div className="product-slider d-flex  flex-wrap ">
-              <div>
-                <h1>product image</h1>
-              </div>
-              {/* <div></div> */}
+            <div className="product-slider  ">
+              <ProductThumbnail />
             </div>
           </Col>
           <Col className="col-lg-6 ">
@@ -70,142 +59,19 @@ const ProductDetail = () => {
                 </div>
               </div>
               {/* third line  */}
-              <div className="price-list">
-                <div className="price">
-                  <div className="d-flex align-items-start ">
-                    <span className="currency-type"> $</span>
-                    <span className="currency">12</span>
-                  </div>
-                  <span className="real-price">
-                    <del> $38.98</del>
-                  </span>
-                  <div className="discount  rounded-circle">
-                    <span>65% off</span>
-                  </div>
-                </div>
-              </div>
+              <PriceDetails />
               {/* fourth line */}
-              <div className="color-filter">
-                <div className="color-title mb-2">
-                  color: <strong>Orange</strong>
-                </div>
-                <div className="color-options">
-                  <Button
-                    style={{
-                      backgroundColor: "#F76F3D",
-                    }}></Button>
-                  <Button style={{ backgroundColor: "#000000" }}></Button>
-                  <Button style={{ backgroundColor: "#327E07" }}></Button>
-                  <Button style={{ backgroundColor: "#8185E8" }}></Button>
-                  <Button style={{ backgroundColor: "#1B3497" }}></Button>
-                </div>
-              </div>
+              <ColorFilter />
               {/* fifth line */}
-              <div className="size-group mb-3">
-                <div className="size-chart">
-                  <span>Size:</span>
-                  <Button>XS</Button>
-                  <Button>S</Button>
-                  <Button>M</Button>
-                  <Button>L</Button>
-                  <Button>XL</Button>
-                  <Button>XXL</Button>
-                </div>
-                <span className="size-guide">
-                  <Image src={Ruler} />
-                  Size Guide
-                </span>
-              </div>
+              <SizeFilter />
               {/* sixth row  */}
-
-              <div className="quantity-box">
-                <Form>
-                  <Form.Group
-                    className="mb-3 quantity-wrapper"
-                    controlId="formBasicEmail">
-                    <Form.Label>Quantity:</Form.Label>
-                    <Button onClick={removeValue}>-</Button>
-                    <Form.Control
-                      type="number"
-                      placeholder="1"
-                      value={count}
-                      onChange={(e) => setCount(e.target.value)}></Form.Control>
-                    <Button onClick={addValue}>+</Button>
-                  </Form.Group>
-                </Form>
-              </div>
+              <Quantity />
               {/* seventh row */}
-              <Row className="condition">
-                <Col className="col-lg-4">
-                  {" "}
-                  <div className="condition-box">
-                    <div className="img-wrapper">
-                      <Image src={van} />
-                    </div>
-                    <h6>
-                      Free delivery on orders over £50.{" "}
-                      <Link className="text-decoration-none">Read More</Link>
-                    </h6>
-                  </div>
-                </Col>
-                <Col className="col-lg-3">
-                  <div className="condition-box">
-                    <div className="img-wrapper">
-                      <Image src={warranty} />
-                    </div>
-                    <h6>
-                      Free 45 day returns.
-                      <Link className="text-decoration-none">Read More</Link>
-                    </h6>
-                  </div>
-                </Col>
-                <Col className="col-lg-5">
-                  <div className="condition-box">
-                    <div className="img-wrapper">
-                      <Image src={returnImg} />
-                    </div>
-                    <h6>
-                      6 month warranty with the Bargain Fox guarantee.
-                      <Link className="text-decoration-none">Read More</Link>
-                    </h6>
-                  </div>
-                </Col>
-              </Row>
+              <Conditions />
               {/* eight row */}
-              <div className="d-flex align-content-center justify-content-between flex-wrap mb-4">
-                <div className="d-flex align-content-center">
-                  <h6 style={{ fontSize: "14px", margin: 0 }}>
-                    HURRY, THERE ARE ONLY 6 ITEMs LEFT!
-                  </h6>
-                </div>
-                <div className="item-group d-flex align-content-center">
-                  {/* <div className="d-flex align-content-center"> */}
-                  <div
-                    className="sub-item"
-                    style={{
-                      background: "#F2F2F8",
-                      borderRadius: "4px",
-                      opacity: 1,
-                      fontSize: "14px",
-                    }}>
-                    {" "}
-                    <img src={people} alt="person" />8
-                  </div>
-                  {/* </div> */}
-                  <h6 style={{ fontSize: "14px", marginBottom: 0 }}>
-                    HURRY, THERE ARE ONLY 6 ITEM(S) LEFT!
-                  </h6>
-                </div>
-              </div>
+              <StockDetails />
               {/* nine row  */}
-              <Row className="cart-btn-group">
-                <Col className="col-lg-6">
-                  <Button id="first-btn">Add to Cart</Button>
-                </Col>
-                <Col className="col-lg-6">
-                  <Button id="second-btn">Buy Now</Button>
-                </Col>
-              </Row>
+              <CartBtn />
               {/* tenth row  */}
               <div className="offer-time">
                 <p>

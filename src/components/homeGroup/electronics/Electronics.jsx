@@ -26,7 +26,7 @@ const Electronics = () => {
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
@@ -34,7 +34,7 @@ const Electronics = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 770,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

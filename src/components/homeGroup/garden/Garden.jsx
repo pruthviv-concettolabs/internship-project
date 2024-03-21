@@ -31,7 +31,7 @@ const Garden = () => {
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
@@ -39,7 +39,7 @@ const Garden = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 770,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

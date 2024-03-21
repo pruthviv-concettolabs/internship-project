@@ -12,37 +12,37 @@ const Deals = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 5,
+    slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          initialSlide: 1,
-        },
-      },
-      {
-        breakpoint: 992,
+        breakpoint: 1199,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
-          initialSlide: 1,
+          initialSlide: 0,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 0,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },

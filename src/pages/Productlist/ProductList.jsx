@@ -3,29 +3,14 @@ import "./productList.scss";
 import ProductCard from "./ProductCard";
 import FilterBox from "./FilterBox";
 import BreadCrumb from "../../components/breadcrumb/BreadCrumb";
+import PaginationPart from "./PaginationPart";
 
 const ProductList = () => {
   return (
     <>
+      <BreadCrumb />
       <section className="product-list">
-        <Container>
-          <BreadCrumb />
-
-          {/* <Row className="mb-4">
-            <Breadcrumb className="custom-breadcrumb">
-              <Breadcrumb.Item
-                href="#"
-                className="text-muted text-decoration-none">
-                Home
-              </Breadcrumb.Item>
-              <Breadcrumb.Item
-                href="/#"
-                className="text-muted text-decoration-none">
-                Library
-              </Breadcrumb.Item>
-              <Breadcrumb.Item active>Data</Breadcrumb.Item>
-            </Breadcrumb>
-          </Row> */}
+        <Container fluid>
           <Row>
             <Col className="col-lg-3 d-lg-flex d-none">
               <FilterBox />
@@ -34,7 +19,9 @@ const ProductList = () => {
               <Col>
                 <div className="productlist-wrapper d-flex align-content-center justify-content-between">
                   <div>
-                    <p className="text-dark ">Showing 1 - 20 of 189 results </p>
+                    <p className="text-dark  ">
+                      Showing 1 - 20 of 189 results{" "}
+                    </p>
                   </div>
 
                   <div>
@@ -60,6 +47,10 @@ const ProductList = () => {
               <Row>
                 <ProductCard />
               </Row>
+
+              <Col md={12}>
+                <PaginationPart />
+              </Col>
             </Col>
           </Row>
         </Container>

@@ -8,14 +8,12 @@ import {
   Row,
 } from "react-bootstrap";
 import share from "../../img/share.png";
-
 import Star from "../../components/star/Star";
 import progressStar from "../../img/Polygon 3.svg";
 import bigStar from "../../img/star-big.svg";
 import rightImg from "../../img/Group 905349.png";
 import BreadCrumb from "../../components/breadcrumb/BreadCrumb.jsx";
 import { Link } from "react-router-dom";
-
 import ProductThumbnail from "../../components/productDetailGroup/ProductThumbnail.jsx";
 import PriceDetails from "../../components/productDetailGroup/PriceDetails.jsx";
 import ColorFilter from "../../components/productDetailGroup/ColorFilter.jsx";
@@ -58,19 +56,12 @@ const ProductDetail = () => {
                   <strong>Celby Store</strong>
                 </div>
               </div>
-              {/* third line  */}
               <PriceDetails />
-              {/* fourth line */}
               <ColorFilter />
-              {/* fifth line */}
               <SizeFilter />
-              {/* sixth row  */}
               <Quantity />
-              {/* seventh row */}
               <Conditions />
-              {/* eight row */}
               <StockDetails />
-              {/* nine row  */}
               <CartBtn />
               {/* tenth row  */}
               <div className="offer-time">

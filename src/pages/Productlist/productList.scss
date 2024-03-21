@@ -1,4 +1,5 @@
 .product-list {
+  padding: 0px 35px;
   .custom-breadcrumb {
     list-style: none;
     padding: 0;
@@ -33,6 +34,9 @@
 
   .productlist-wrapper {
     margin-bottom: 30px;
+    .text-dark {
+      font-weight: 600 !important;
+    }
     .dropdown-wrapper {
       border: 2px solid #f5f5fc;
       padding: 3px 20px;
@@ -52,6 +56,35 @@
           &:focus {
             box-shadow: none !important;
           }
+        }
+      }
+    }
+  }
+
+  .pagination-cover {
+    margin-top: 30px;
+    .pagination .page-item #pagPrev {
+      padding: 0px;
+    }
+    .pagination .page-item #pagNext {
+      padding: 0px;
+
+      &:focus {
+        background-color: transparent;
+        color: transparent;
+        box-shadow: none;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      li #pagPrev a {
+        padding: 0;
+      }
+      li {
+        margin-right: 10px;
+        span {
+          border-radius: 4px;
         }
       }
     }

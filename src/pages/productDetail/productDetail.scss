@@ -83,7 +83,6 @@
       }
     }
     .color-filter {
-      border: none;
       margin-bottom: 16px;
       .color-title {
         font-size: 18px;
@@ -96,6 +95,7 @@
       }
       .color-options {
         button {
+          border: none;
           width: 30px;
           height: 30px;
           margin-right: 30px;

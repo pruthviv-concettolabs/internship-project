@@ -22,7 +22,7 @@ const News = () => {
                 </Col>
 
                 <Col className="col-xl-2 p-0 center-col align-self-start">
-                  <Image src={arrow} className="" />
+                  <Image src={arrow} className="img-fluid" />
                 </Col>
               </Row>
             </Col>

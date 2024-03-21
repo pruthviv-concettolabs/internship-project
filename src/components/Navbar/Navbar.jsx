@@ -39,7 +39,7 @@ const NavigationBar = () => {
               </Navbar.Brand>
             </Col>
 
-            <Col className="center-column  d-none d-md-flex    ">
+            <Col className="center-column p-0  d-none d-md-flex    ">
               <Form>
                 <InputGroup className=" col-12 m-0">
                   <Form.Control

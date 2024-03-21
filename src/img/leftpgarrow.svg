@@ -1,0 +1,5 @@
+<svg id="chevron-left" xmlns="http://www.w3.org/2000/svg" width="119" height="36" viewBox="0 0 119 36">
+  <path id="Path_459" data-name="Path 459" d="M0,0H119V36H0Z" fill="none"/>
+  <path id="Path_460" data-name="Path 460" d="M15,6,9,12l6,6" transform="translate(6 6)" fill="none" stroke="#a4a4b8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <text id="Number" transform="translate(70 24)" fill="#a4a4b8" font-size="16" font-family="Inter" font-weight="600"><tspan x="-33" y="0">Previous</tspan></text>
+</svg>

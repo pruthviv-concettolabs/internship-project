@@ -10,7 +10,6 @@ const SignUp = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-
       <Button
         variant="primary"
         className="btn  dropdown-item  text-capitalize  rounded-4"
@@ -18,7 +17,7 @@ const SignUp = () => {
         Login/Register
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton className="border-0 "></Modal.Header>
 
         <Modal.Body>

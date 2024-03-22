@@ -1,0 +1,24 @@
+.cust-product-card-wrapper {
+  .cust-card-body {
+    .card-info .price-group {
+      .cust-discount-wrapper {
+        font-size: 10px;
+        .discount {
+          background-repeat: no-repeat;
+          background-size: 35px 35px;
+
+          color: white;
+          padding: 9px;
+          background: url("../../img/blue-discount-polygon.svg");
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // font-size: 14px;
+          background-repeat: no-repeat;
+          background-size: 34px 34px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

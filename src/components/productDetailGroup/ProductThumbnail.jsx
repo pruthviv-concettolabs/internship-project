@@ -35,7 +35,7 @@ const ProductThumbnail = () => {
   return (
     <>
       <Row>
-        <Col md={3}>
+        <Col md={3} className="col-2">
           <Slider
             {...settingsNav}
             asNavFor={nav1}
@@ -52,7 +52,7 @@ const ProductThumbnail = () => {
             ))}
           </Slider>
         </Col>
-        <Col md={9}>
+        <Col md={9} className="col-10">
           {/* <div className="slider-for-container"> */}
           <Slider
             {...settingsFor}

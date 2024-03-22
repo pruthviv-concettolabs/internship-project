@@ -4,6 +4,7 @@ import ProductCard from "./ProductCard";
 import FilterBox from "./FilterBox";
 import BreadCrumb from "../../components/breadcrumb/BreadCrumb";
 import PaginationPart from "./PaginationPart";
+import SubFilter from "./SubFilter";
 
 const ProductList = () => {
   return (
@@ -17,11 +18,9 @@ const ProductList = () => {
             </Col>
             <Col className="col-lg-9 flex-column">
               <Col>
-                <div className="productlist-wrapper d-flex align-content-center justify-content-between">
-                  <div>
-                    <p className="text-dark  ">
-                      Showing 1 - 20 of 189 results{" "}
-                    </p>
+                <div className="productlist-wrapper mt-3 mt-lg-0 d-flex align-content-center justify-content-between">
+                  <div className="d-none d-lg-block">
+                    <p className="text-dark  ">Showing 1 - 20 of 189 results</p>
                   </div>
 
                   <div>
@@ -41,6 +40,10 @@ const ProductList = () => {
                         </Form.Select>
                       </div>
                     </div>
+                  </div>
+
+                  <div className="d-block d-lg-none">
+                    <SubFilter />
                   </div>
                 </div>
               </Col>

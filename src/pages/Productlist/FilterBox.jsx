@@ -15,7 +15,7 @@ const FilterBox = () => {
   return (
     <>
       <div className="filter-wrapper">
-        <h3 className="">Filters</h3>
+        <h3 className="d-none d-lg-block">Filters</h3>
 
         <Row>
           <Col className="col-12 first-col">

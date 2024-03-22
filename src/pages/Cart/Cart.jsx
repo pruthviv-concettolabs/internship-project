@@ -12,25 +12,27 @@ const Cart = () => {
       <BreadCrumb />
       <Container fluid className="cust-container">
         <Row>
-          <Col md={8}>
-            <div className="cart-heading  d-flex justify-content-between align-content-center">
-              <div className="cart-title text-start  d-flex">
-                <h2 className="me-4 fw-bold mb-0">Shopping Cart</h2>
-                <span>(3 Items)</span>
+          <div className="shopping-wrapper">
+            <Col md={8}>
+              <div className="cart-heading  d-flex justify-content-between align-content-center">
+                <div className="cart-title text-start  d-flex">
+                  <h2 className="me-4 fw-bold mb-0">Shopping Cart</h2>
+                  <span>(3 Items)</span>
+                </div>
+                <Link className="cart-wishlist nav-link">
+                  <Image src={heart} alt="heart" />
+                  <p className="mb-0 ms-2">Go to Wishlist</p>
+                </Link>
               </div>
-              <Link className="cart-wishlist nav-link">
-                <Image src={heart} alt="heart" />
-                <p className="mb-0 ms-2">Go to Wishlist</p>
-              </Link>
-            </div>
-            {/* main-second  */}
-            <CartBox />
-            <CartBox />
-            <CartBox />
-          </Col>
-          <Col md={4}>
-            <OrderSummary />
-          </Col>
+              {/* main-second  */}
+              <CartBox />
+              <CartBox />
+              <CartBox />
+            </Col>
+            <Col md={4}>
+              <OrderSummary />
+            </Col>
+          </div>
         </Row>
       </Container>
     </>

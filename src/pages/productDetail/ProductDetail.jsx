@@ -77,7 +77,7 @@ const ProductDetail = () => {
         </Row>
 
         <Row className="second-row">
-          <Col md={6}>
+          <Col lg={6} className="order-lg-1 col-12 order-2">
             <div style={{ borderTop: "2px solid #f2f2f8" }}>
               <h3 className="text-start">Customer Reviews</h3>
             </div>
@@ -94,8 +94,8 @@ const ProductDetail = () => {
                     <span className="me-1">5</span>
                     <Image src={progressStar} alt="star" />
                   </div>
-                  <ProgressBar now={60} />
-                  <p className="mb-0 ms-2">0</p>
+                  <ProgressBar now={20} />
+                  <p className="mb-0 ms-2">20</p>
                 </div>
                 <div className="progress-line mb-2 d-flex align-content-center">
                   <div className="progress-wrapper me-2 ">
@@ -103,31 +103,31 @@ const ProductDetail = () => {
                     <Image src={progressStar} alt="star" />
                   </div>
                   <ProgressBar now={60} />
-                  <p className="mb-0 ms-2">0</p>
+                  <p className="mb-0 ms-2">60</p>
                 </div>
                 <div className="progress-line mb-2 d-flex align-content-center">
                   <div className="progress-wrapper me-2 ">
                     <span className="me-1">3</span>
                     <Image src={progressStar} alt="star" />
                   </div>
-                  <ProgressBar now={60} />
-                  <p className="mb-0 ms-2">0</p>
+                  <ProgressBar now={80} />
+                  <p className="mb-0 ms-2">80</p>
                 </div>
                 <div className="progress-line mb-2 d-flex align-content-center">
                   <div className="progress-wrapper me-2 ">
                     <span className="me-1">2</span>
                     <Image src={progressStar} alt="star" />
                   </div>
-                  <ProgressBar now={60} />
-                  <p className="mb-0 ms-2">0</p>
+                  <ProgressBar now={30} />
+                  <p className="mb-0 ms-2">30</p>
                 </div>
                 <div className="progress-line mb-2 d-flex align-content-center">
                   <div className="progress-wrapper me-2 ">
                     <span className="me-1">1</span>
                     <Image src={progressStar} alt="star" />
                   </div>
-                  <ProgressBar now={60} />
-                  <p className="mb-0 ms-2">0</p>
+                  <ProgressBar now={10} />
+                  <p className="mb-0 ms-2">10</p>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ const ProductDetail = () => {
               <p>Rate This Product</p>
             </div>
           </Col>
-          <Col md={6}>
+          <Col lg={6} className="order-lg-1 col-12 order-1">
             <div className="product-details">
               <div style={{ borderTop: "2px solid #f2f2f8" }}>
                 <h3 className="text-start mb-3">Highlight</h3>

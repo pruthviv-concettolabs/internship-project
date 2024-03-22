@@ -1,3 +1,15 @@
+@media (max-width: 992px) {
+  .slick-slide .slick-slide-thumbimg {
+    margin-top: 10px;
+    width: 70% !important;
+    height: 100%;
+    border-radius: 15%;
+    display: block !important;
+    padding-right: 10px;
+    margin: auto !important;
+  }
+}
+
 .slick-slide .cust-img-group {
   margin-bottom: 10px;
 }

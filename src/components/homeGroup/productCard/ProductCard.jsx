@@ -31,9 +31,11 @@ const ProductCard = ({
                 <del>₹{originalPrice}</del>
               </span>
             </div>
-            <div className="discount  rounded-circle">
-              {discount}
-              <span>%</span>
+            <div className="discount-wrapper">
+              <div className="discount">
+                {discount}
+                <span>%</span>
+              </div>
             </div>
           </div>
         </Card.Body>

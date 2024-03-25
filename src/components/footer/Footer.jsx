@@ -61,7 +61,7 @@ const Footer = () => {
                   <a href="#">Download the App</a>
                 </li>
                 <li className="pb-4 ">
-                  <a href="#">FastFox Subscription</a>
+                  <a href="#">eCart Subscription</a>
                 </li>
               </ul>
             </div>
@@ -110,7 +110,7 @@ const Footer = () => {
               <p className="text-center">
                 All rights reserved © 2023{" "}
                 <a href="#" className="cursor-pointer">
-                  BargainFox.com
+                  eCart.com
                 </a>
               </p>
             </Col>

@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer";
 import Login from "./pages/login/Login";
 import ProductDetail from "./pages/productDetail/ProductDetail";
 import Cart from "./pages/Cart/Cart";
+import Profile from "./pages/profile/Profile";
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/productDetail" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />
     </>
